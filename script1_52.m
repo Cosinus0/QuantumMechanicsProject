@@ -30,7 +30,7 @@ for it = 1:length(t)
   
   #compute <x> 
   xnorm2= trapz(x,x.*conj(psi_cn(cn,n,x,t(it))).*psi_cn(cn,n,x,t(it)));
-  a = line([xnorm2 xnorm2],[0 1.5]);
+  a = line([xnorm2 xnorm2],[0 3]);
   
   #compute <x^2>
   x2norm2= trapz(x,x.^2.*conj(psi_cn(cn,n,x,t(it))).*psi_cn(cn,n,x,t(it)));
